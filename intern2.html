@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 	<title>frontend_internship_assessment</title>
@@ -56,16 +56,7 @@
 		.f1-li{
 			margin-left: 40px;
 		}
-		/*.back-img{}
-		.back-img:before{
-			background-image: url(https://s3-alpha-sig.figma.com/img/cdcf/46f5/3d5432fef4b824af69731ef47be3fde3?Expires=1609113600&Signature=cwSDNIXCtZWe2xRmW9wTAREHTLIshRmWpQ7e6ihAEmwxyzxnMxCNhB44fdEI23dcTtPMbgW8tR9ln~xLEGAuRwr75CI2OD1ihM~chyoArtRRLIltb93Lzm9AkgKL~tMX0ewqnaxxL~t8LoQfXH1dNUnSSoTQ9dOS8uIJMk0A92cPaOy~1iOFUAqyGHtAM839Dhmw8gyDBBg6FD80XCujFov6Gpx8irWzVsmmTA~2jRzaWpNjQ3sklFGxn6OcwnnN4LOkE1BV-R97hog2ukLfzC6GoNp8Q3ooTFyVJv5qjszNaSb7rMctNaBqf7J9ZXH7TJldJuxyl10d6aptyZ2d2g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
-			background-size: 100%;
-			filter: blur(2px);
-			-webkit-filter:blur(5px);
-			content: "";
-			z-index: -1;
-		}
-*/
+		
 		body, html {
   height: 100%;
 }
@@ -178,26 +169,15 @@
 		  	<div class="col-md-4"></div>
 					<div class="col-md-4 font" style="margin-left: 295px;margin-top: 124px;">
 
-						<center class="font-weight-bold" style="font-size: 38px">Password Reset</center>
-						<form onsubmit="return validation()"><br>
-
-							<div class="form-group">
-								<label class="">NEW PASSWORD</label>
-								<input type="password" id="pass" name="" class="form-control" style="border: 3px solid black">
-								<span id="password"></span>
-							</div><!--end--><br>
-
-							<div class="form-group">
-								<label class="">RE-ENTER NEW PASSWORD</label>
-								<input type="password" id="conpass" name="" class="form-control" style="border: 3px solid black">
-								<span id="confirmpass"></span>
-							</div><!--end--><br>
-
-							<div class="form-group">
-								<button class="log">RESET PASSWORD</button>
+						<center class="font-weight-bold" style="font-size: 38px">Password Changed</center>
+						<p class="log">Your password has been updated! Now get back 
+						in the driver seat, racers are waiting for you!</p>
+						<button class="log"><a href="intern2.html">join a race</a></button>
 						 	<div><!--end-->
+						
 								
 						</form>
+					</div>
 
 					<div class="col-md-4"></div>
 					
@@ -222,44 +202,3 @@
 
 	</div><!--end of container-fluid-->
 	<!--end of footer-->
-
-
-	<script>
-		function validation()
-		{
-			var pass = document.getElementById("pass").value;
-
-			var conpass= document.getElementById("conpass").value;
-
-			if(pass!=conpass){
-				document.getElementById('confirmpass').innerHTML =" ** Password do not match";
-
-				document.getElementById('conpass').setAttribute("style","border:2px solid red");
-
-				return false;
-			}
-
-			if(conpass.length<8){
-				document.getElementById('confirmpass').innerHTML =" ** Passwords lenght is less than 8";
-
-				return false;	
-			}
-			if(pass.length<8){
-				document.getElementById('password').innerHTML =" ** Passwords lenght is less than 8";
-
-				return false;	
-			}
-
-			if(isNaN(pass)){
-				document.getElementById('password').innerHTML =" ** user must write digits only not characters";
-				return false;
-			}
-			if(isNaN(conpass)){
-				document.getElementById('confirmpass').innerHTML =" ** user must write digits only not characters";
-				return false;
-			}
-			
-		}
-	</script>
-</body>
-</html>
