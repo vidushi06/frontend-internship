@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>frontend_internship_assessment</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.a{
+			background-color:#33A0D9;
+		}
+
+		li{
+			padding: 6px;
+			font-size: 18px;
+			margin-left: 22px;
+			margin-top: 5px;
+
+		}
+
+		.mob-logo{
+			  display: none;
+			}
+		@media (max-width: 724px){
+
+		  .mob-logo {
+
+		    display: block;
+		    
+		  }
+		  .web-logo{
+
+			display: none;
+
+		    }
+
+		   .a{
+		   	background-color:#33A0D9;
+		   }
+		}
+		.f1{
+			background-color: #2180B2;
+			padding:10px;
+		}
+		
+		.f1-ul{
+			margin-left: 10px;
+		}
+
+		.f1-li{
+			margin-left: 40px;
+		}
+		/*.back-img{}
+		.back-img:before{
+			background-image: url(https://s3-alpha-sig.figma.com/img/cdcf/46f5/3d5432fef4b824af69731ef47be3fde3?Expires=1609113600&Signature=cwSDNIXCtZWe2xRmW9wTAREHTLIshRmWpQ7e6ihAEmwxyzxnMxCNhB44fdEI23dcTtPMbgW8tR9ln~xLEGAuRwr75CI2OD1ihM~chyoArtRRLIltb93Lzm9AkgKL~tMX0ewqnaxxL~t8LoQfXH1dNUnSSoTQ9dOS8uIJMk0A92cPaOy~1iOFUAqyGHtAM839Dhmw8gyDBBg6FD80XCujFov6Gpx8irWzVsmmTA~2jRzaWpNjQ3sklFGxn6OcwnnN4LOkE1BV-R97hog2ukLfzC6GoNp8Q3ooTFyVJv5qjszNaSb7rMctNaBqf7J9ZXH7TJldJuxyl10d6aptyZ2d2g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+			background-size: 100%;
+			filter: blur(2px);
+			-webkit-filter:blur(5px);
+			content: "";
+			z-index: -1;
+		}
+*/
+		body, html {
+  height: 100%;
+}
+
+/** {
+  box-sizing: border-box;
+}
+*/
+.bg-image {
+  /* The image used */
+  background-image: url("https://s3-alpha-sig.figma.com/img/cdcf/46f5/3d5432fef4b824af69731ef47be3fde3?Expires=1609113600&Signature=cwSDNIXCtZWe2xRmW9wTAREHTLIshRmWpQ7e6ihAEmwxyzxnMxCNhB44fdEI23dcTtPMbgW8tR9ln~xLEGAuRwr75CI2OD1ihM~chyoArtRRLIltb93Lzm9AkgKL~tMX0ewqnaxxL~t8LoQfXH1dNUnSSoTQ9dOS8uIJMk0A92cPaOy~1iOFUAqyGHtAM839Dhmw8gyDBBg6FD80XCujFov6Gpx8irWzVsmmTA~2jRzaWpNjQ3sklFGxn6OcwnnN4LOkE1BV-R97hog2ukLfzC6GoNp8Q3ooTFyVJv5qjszNaSb7rMctNaBqf7J9ZXH7TJldJuxyl10d6aptyZ2d2g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+
+  /* Full height */
+  height: 80%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  
+  color:black;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+/*login button*/
+.log{
+	color: white;
+	background: black;
+	border: none;
+	border-radius: 6px;
+	padding: 6px;
+	width: 110%;
+	letter-spacing: 2px;
+}
+#pass{
+	color:black;
+}
+.password{
+	color: red;
+}
+#conpass{
+	color: black;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+.error{
+	border-color: 2px solid red;
+	color: red;
+}
+
+	</style>
+</head>
+<body>
+	<!--start of nav bar-->
+	<nav class="navbar navbar-expand-md navbar-dark a">
+
+		 <!--logo on nav bar-->
+		<a href="" class="navbar-brand">
+
+		      <img class="web-logo" src="https://s3-alpha-sig.figma.com/img/54ba/1eb8/fc1c45bbba07d765e00b619bf87ddfe4?Expires=1609113600&Signature=KqeO9oj9ETUe8-dKw06dzDBGnHjtxDvCSMtJgEBb2xvJ0bAeAOfw8LjKw2hVYnq15AnUYm2rTkvSSLAN3Dpeb5-ArvKfjRryiqMAxc8vOM5ZahFalUCfpUOfM8FQAqR075uR9SgL-yf4FTg5jHmHhPjGZRDN44weEDUltxiqMT2TA2grEGVrJIaWmG1DT~Dgqs4J2R-YOqbYAdNm40LJX7QtaI0NCLZeLxPWrPFOQlWLVfCHB7RHjnb9QpeOUWbat1Bh3bxOJnXDs6ouj60cOtLY9SrFC2vPQEe8hC1xFFnWsJsXE1wLBxdUynJX~~75LaSOb1QWlQKWoyL5Hix0fg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA " width="145px" style="margin-left: 75px" >
+		      
+		 </a>
+		 <!--button toggle-->
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#a">
+
+            <span class="navbar-toggler-icon"></span>
+   
+   		 </button>
+
+		<div class="collapse navbar-collapse" id="a">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="" class="nav-link font-weight-bold" style="color:black">Join a Race</a></li>
+				<li class="nav-item">
+					<a href="" class="nav-link font-weight-bold" style="color:black">Leaderboard</a></li>
+				<li class="nav-item">
+					<a href="" class="nav-link" style="color:black"><button type="button" class="btn btn-light font-weight-bold" style="width: 100px;height: 40px;margin-top: -6px;">Login</button> </a></li>
+				
+
+			 </ul> 
+		</div>	 
+	</nav><!--end of nav bar-->
+
+	<div class=" container-fluid bg-image"></div>
+
+		<div class="container bg-text">
+		  	<div class="col-md-4"></div>
+					<div class="col-md-4 font" style="margin-left: 295px;margin-top: 124px;">
+						<center class="font-weight-bold" style="font-size: 38px">Password Reset</center>
+						<form onsubmit="return validation()"><br>
+							<div class="form-group">
+								<label class="">NEW PASSWORD</label>
+								<input type="password" id="pass" name="" class="form-control" style="border: 3px solid black">
+								<span id="password"></span>
+							</div><!--end--><br>
+
+							<div class="form-group">
+								<label class="">RE-ENTER NEW PASSWORD</label>
+								<input type="password" id="conpass" name="" class="form-control" style="border: 3px solid black">
+								<span id="confirmpass"></span>
+							</div><!--end--><br>
+
+							<div class="form-group" onclick="function()" value="dark" id="Geeks">
+								<button class="log">RESET PASSWORD</button>
+							</div><!--end-->
+								
+						</form>
+
+					<div class="col-md-4"></div>
+					
+			</div><!--end of container-->
+		
+	</div><!--end of container fluid-->
+
+	
+
+	<!--start  of footer-->
+	<div class="container-fluid">
+		<div class="row f1 fixed-bottom font-weight-bold text-light">
+			<div class="col-md-2"></div>
+			<ul class="list-inline f1-ul">
+				<li class="list-inline-item f1-li">About us</li>
+				<li class="list-inline-item f1-li">Privacy Policy</li>
+				<li class="list-inline-item f1-li">Tutorials</li>
+				<li class="list-inline-item f1-li">Terms of Services</li>
+			</ul>
+			
+		</div><!--end of row-->
+
+	</div><!--end of container-fluid-->
+	<!--end of footer-->
+
+
+	<script>
+		function validation()
+		{
+			var pass = document.getElementById("pass").value;
+
+			var conpass= document.getElementById("conpass").value;
+
+			if(pass!=conpass){
+				document.getElementById('confirmpass').innerHTML =" ** Password do not match";
+
+				document.getElementById('conpass').setAttribute("style","border:2px solid red");
+
+				return false;
+			}
+
+			if(conpass.length<8){
+				document.getElementById('confirmpass').innerHTML =" ** Passwords lenght is less than 8";
+
+				return false;	
+			}
+			if(pass.length<8){
+				document.getElementById('password').innerHTML =" ** Passwords lenght is less than 8";
+
+				return false;	
+			}
+
+			if(isNaN(pass)){
+				document.getElementById('password').innerHTML =" ** user must write digits only not characters";
+				return false;
+			}
+			if(isNaN(conpass)){
+				document.getElementById('confirmpass').innerHTML =" ** user must write digits only not characters";
+				return false;
+			}
+			
+		}
+	</script>
+</body>
+</html>
